@@ -6,12 +6,5 @@ var puredocx = new Puredocx()
 
 puredocx.setMeteredKey(process.env.PUREDOCX_LICENSE_API_KEY)
 
-var substitutions = {
-    "title": "hello",
-    "summary": "New World",
-    "staff": 30,
-    "company": "mllx"
-};
 
-
-puredocx.render("simple.docx", substitutions, "output.docx")
+puredocx.render("chart-bar.docx", substitutions, "output.docx")
